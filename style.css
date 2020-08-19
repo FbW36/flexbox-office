@@ -1,0 +1,131 @@
+/* UNIVERSAL STYLES */
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV BAR */
+a {
+  color: rgb(236, 223, 223);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgb(236, 28, 9);
+  padding: 2rem 0.5rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  background: rgba(236, 28, 9, 0.85);
+}
+
+.navigation ul {
+  border: 1px solid rgb(141, 44, 36);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation li {
+  flex-basis: 100%;
+}
+
+.navigation .user {
+  flex: 1 1 50%;
+}
+
+/* ************************************* */
+/* CARD */
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: rgb(231, 231, 238);
+  list-style: none;
+  padding: 2.5rem;
+}
+
+.list .list-item {
+  display: flex;
+  padding: 2rem 3rem;
+  width: 40rem;
+}
+
+.list .list-item__image img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.list .list-item__content {
+  padding: 0 2rem;
+}
+
+.list .list-item__content h4 {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.list .list-item__content p {
+  margin-top: 1.5rem;
+  color: #aaa;
+}
+
+/* MISSION  */
+
+.mission {
+  margin-top: 3rem;
+}
+
+.mission h2 {
+  text-align: center;
+}
+
+.mission p {
+  width: 75%;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 2.4rem;
+}
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (min-width: 768px) {
+  /* .navigation ul {
+    
+  } */
+  .navigation li {
+    flex: 1 1 50%;
+    /* flex-basis: 50%; */
+  }
+  .navigation .user {
+    flex: 1 1 33.33%;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+  .navigation ul {
+    flex-flow: row nowrap;
+  }
+  .navigation li {
+    flex: 3;
+  }
+  .navigation .user {
+    flex: 1;
+  }
+}
